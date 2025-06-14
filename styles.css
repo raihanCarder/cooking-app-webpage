@@ -5,7 +5,7 @@
 }
 
 :root {
-    --header-color: #FFB347;
+    --header-color: rgba(255, 165, 0, 0.7);
 }
 
 html {
@@ -21,6 +21,7 @@ html {
     height: 80px;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 #header-container {
@@ -35,7 +36,7 @@ html {
     height: 100%;
 }
 
-h1 {
+#header-container>h1 {
     font-size: 60px;
 }
 
@@ -46,12 +47,14 @@ ul {
     align-items: center;
     justify-content: center;
     height: 80px;
+    gap: 10px;
 }
+
 
 
 ul>li>a {
     font-size: 25px;
-    gap: 3px;
+    gap: 5px;
     padding: 5px;
     height: 100%;
     display: flex;
@@ -65,12 +68,91 @@ ul>li>a {
 
 a:hover {
     background-color: orange;
+    border-radius: 10px;
 }
 
 :target {
     scroll-margin-top: 80px;
 }
 
+/*MAIN SECTION*/
+
 .main-section {
     padding-top: 80px;
+    height: 100vh;
+    background-color: blue;
+    background-image: url("/images/kitchen.jpg");
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.around-main-info>img {
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.around-main-info {
+    background: rgba(255, 165, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 165, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+
+    padding: 10px;
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#main-info {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+#main-info h1 {
+    font-size: 70px;
+}
+
+#main-info>h2 {
+    font-size: 30px;
+}
+
+#main-info>p {
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: rgba(255, 165, 0, 0.3);
+    border: 1px solid rgba(255, 165, 0, 0.5);
+    border-radius: 12px;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
