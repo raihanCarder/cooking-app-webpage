@@ -6,10 +6,14 @@
 
 :root {
     --header-color: rgba(255, 165, 0, 0.7);
+    --header-text: black;
+    --hover-nav: orange;
+    --main-text-color: black;
 }
 
 html {
     scroll-behavior: smooth;
+    background-color: white;
 }
 
 
@@ -34,6 +38,7 @@ html {
 
 #header-container>img {
     height: 100%;
+    margin-left: 10px;
 }
 
 #header-container>h1 {
@@ -48,6 +53,7 @@ ul {
     justify-content: center;
     height: 80px;
     gap: 10px;
+    margin-right: 10px;
 }
 
 
@@ -62,12 +68,12 @@ ul>li>a {
     justify-content: center;
     font-weight: bold;
     cursor: pointer;
-    color: black;
+    color: var(--header-text);
     text-decoration: none;
 }
 
 a:hover {
-    background-color: orange;
+    background-color: var(--hover-nav);
     border-radius: 10px;
 }
 
@@ -80,14 +86,15 @@ a:hover {
 .main-section {
     padding-top: 80px;
     height: 100vh;
-    background-color: blue;
     background-image: url("/images/kitchen.jpg");
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .around-main-info>img {
@@ -98,13 +105,12 @@ a:hover {
 }
 
 .around-main-info {
-    background: rgba(255, 165, 0, 0.2);
+    background-color: rgba(255, 165, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 165, 0, 0.4);
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    color: #1a1a1a;
+    color: var(--main-text-color);
 
     padding: 10px;
     height: 400px;
@@ -155,4 +161,58 @@ button {
 button:hover {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Information section */
+
+h3 {
+    background-color: rgba(255, 165, 0, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: black;
+    font-size: 40px;
+
+}
+
+.info-section {
+    background: rgba(255, 165, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 200px;
+    padding-bottom: 50px;
+}
+
+.info {
+    background-color: rgba(255, 165, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+}
+
+.info>img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+
+.info>p {
+    background-color: orange;
+    width: calc(100% + 20px);
+
+    margin-left: -10px;
+    margin-right: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 18px;
+    height: 50px;
+    text-align: center;
+    padding: 3px;
 }
