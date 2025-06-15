@@ -229,6 +229,7 @@ h3 {
 #quote-text {
     margin: 10px;
     font-size: 40px;
+    text-align: center;
 
 }
 
@@ -250,7 +251,9 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
+
 
 #container {
     background-color: red;
@@ -263,7 +266,7 @@ h3 {
 
     color: white;
 
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -282,4 +285,17 @@ h4 {
 #preorder-btn {
     padding: 0 70px;
     color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: gray;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
 }
