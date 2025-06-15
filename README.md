@@ -19,5 +19,5 @@ This was a fun project I made for an app idea I hope to make in the future.
 - HTML
 - CSS
 
-Created by Raihan Carder(https://github.com/yourusername)  
+Created by Raihan Carder(https://github.com/raihanCarder)  
 Feel free to reach out!
