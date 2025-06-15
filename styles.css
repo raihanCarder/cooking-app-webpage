@@ -86,7 +86,7 @@ a:hover {
 .main-section {
     padding-top: 80px;
     height: 100vh;
-    background-image: url("/images/kitchen.jpg");
+    background-image: url("images/kitchen.jpg");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ h3 {
 
 .footer-section {
 
-    background-image: url(/images/orange-alley.jpg);
+    background-image: url("images/orange-alley.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
