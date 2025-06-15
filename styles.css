@@ -182,7 +182,6 @@ h3 {
     gap: 30px;
     padding: 10px;
     flex-wrap: wrap;
-    height: 200px;
     padding-bottom: 50px;
 }
 
@@ -215,4 +214,72 @@ h3 {
     height: 50px;
     text-align: center;
     padding: 3px;
+}
+
+/*QUOTE AREA*/
+
+.quote {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote-text {
+    margin: 10px;
+    font-size: 40px;
+
+}
+
+#author {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+/* PREORDER SECTION*/
+
+.footer-section {
+
+    background-image: url(/images/orange-alley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 30px;
+    border-radius: 30px;
+
+    color: white;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#subcontainer {
+    text-align: center;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#preorder-btn {
+    padding: 0 70px;
+    color: white;
 }
