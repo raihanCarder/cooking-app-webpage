@@ -8,7 +8,7 @@ This was a fun project I made for an app idea I hope to make in the future.
 ## Installation
 
 1. Clone the repo  
-   `git clone https://github.com/yourusername/project-name.git`
+   `git clone https://github.com/raihanCarder/cooking-app-webpage.git`
 
 2. Navigate to the folder  
    `cd cooking-app-webpage`
